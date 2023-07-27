@@ -1,0 +1,34 @@
+#logo-container, #heading-container>div:first-of-type, #heading-container>div:nth-of-type(2), #info, #email-container{
+    margin-left: 150px;
+}
+
+#heading-container>div:first-of-type, #heading-container>div:nth-of-type(2) {
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+#info-container{
+    background: linear-gradient(135deg, var(--bg-info-start), var(--bg-info-end));
+}
+
+#heading-container>div:first-of-type{
+    margin-top: 120px;
+    color: var(--soft-red);
+    font-weight: 300;
+}
+
+#heading-container>div:nth-of-type(2){
+    color: var(--dark-grayish-red);
+    font-weight: 600;
+}
+
+#info{
+    width: 40%;
+    margin-top: 20px;
+    color: var(--de-saturated-red);
+    font-weight: 400;
+}
+
+#logo-container{
+    margin-top: 70px;
+}

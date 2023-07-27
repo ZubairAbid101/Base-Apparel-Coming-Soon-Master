@@ -1,0 +1,63 @@
+input{
+    padding: 10px;
+    border: 1px solid var(--de-saturated-red);
+    border-radius: 10px;
+}
+
+input:focus{
+    outline: none;
+}
+
+input::placeholder{
+    color: var(--de-saturated-red)
+}
+
+button{
+    background: linear-gradient(135deg, var(--bg-button-start), var(--bg-button-end));
+    border-radius: 10px;
+    border: none;
+}
+
+button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#error{
+    color: var(--soft-red);
+}
+
+#email-container{
+    width: 50%;
+    height: 40px;
+    margin-top: 40px;
+    position: relative;
+}
+
+input, button, #error-icon, #error{
+    height: 100%;
+    position: absolute;
+}
+
+input{
+    width: 80%;
+    top: 0;
+    left: 0;
+}
+
+button{
+    width: 30%;
+    top: 0;
+    left: 70%;
+}
+
+#error-icon{
+    height: 50%;
+    top: 25%;
+    left: 60%;
+}
+
+#error{
+    top: 50px;
+    left: 0px;
+}

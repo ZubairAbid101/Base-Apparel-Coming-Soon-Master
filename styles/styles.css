@@ -1,0 +1,226 @@
+#desktop-hero-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#mobile-hero-img {
+  display: none;
+}
+
+#logo-container, #heading-container > div:first-of-type, #heading-container > div:nth-of-type(2), #info, #email-container {
+  margin-left: 150px;
+}
+
+#heading-container > div:first-of-type, #heading-container > div:nth-of-type(2) {
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+#info-container {
+  background: linear-gradient(135deg, var(--bg-info-start), var(--bg-info-end));
+}
+
+#heading-container > div:first-of-type {
+  margin-top: 120px;
+  color: var(--soft-red);
+  font-weight: 300;
+}
+
+#heading-container > div:nth-of-type(2) {
+  color: var(--dark-grayish-red);
+  font-weight: 600;
+}
+
+#info {
+  width: 40%;
+  margin-top: 20px;
+  color: var(--de-saturated-red);
+  font-weight: 400;
+}
+
+#logo-container {
+  margin-top: 70px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid var(--de-saturated-red);
+  border-radius: 10px;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::-moz-placeholder {
+  color: var(--de-saturated-red);
+}
+
+input::placeholder {
+  color: var(--de-saturated-red);
+}
+
+button {
+  background: linear-gradient(135deg, var(--bg-button-start), var(--bg-button-end));
+  border-radius: 10px;
+  border: none;
+}
+
+button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+#error {
+  color: var(--soft-red);
+}
+
+#email-container {
+  width: 50%;
+  height: 40px;
+  margin-top: 40px;
+  position: relative;
+}
+
+input, button, #error-icon, #error {
+  height: 100%;
+  position: absolute;
+}
+
+input {
+  width: 80%;
+  top: 0;
+  left: 0;
+}
+
+button {
+  width: 30%;
+  top: 0;
+  left: 70%;
+}
+
+#error-icon {
+  height: 50%;
+  top: 25%;
+  left: 60%;
+}
+
+#error {
+  top: 50px;
+  left: 0px;
+}
+
+:root {
+  --de-saturated-red: hsl(0, 36%, 70%);
+  --soft-red: hsl(0, 93%, 68%);
+  --dark-grayish-red: hsl(0, 6%, 24%);
+  --bg-info-start: hsl(0, 0%, 100%);
+  --bg-info-end: hsl(0, 100%, 98%);
+  --bg-button-start: hsl(0, 80%, 86%);
+  --bg-button-end: hsl(0, 74%, 74%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+#container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+#info-container {
+  width: 60%;
+}
+
+#img-container {
+  width: 40%;
+}
+
+/* Mobile Layout */
+@media (max-width: 700px) {
+  #root {
+    min-height: 100vh;
+    min-width: 100vw;
+  }
+  #container {
+    flex-direction: column;
+  }
+  #info-container {
+    width: 100%;
+  }
+  #img-container {
+    width: 100%;
+  }
+  #desktop-hero-img {
+    display: none;
+  }
+  #mobile-hero-img {
+    display: block;
+    width: 100%;
+  }
+  #logo-container {
+    margin: 10px;
+  }
+  #heading-container > div:first-of-type, #heading-container > div:nth-of-type(2), #info {
+    text-align: center;
+  }
+  #heading-container > div:first-of-type, #heading-container > div:nth-of-type(2) {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  #heading-container > div:first-of-type {
+    margin-top: 15px;
+  }
+  #info {
+    width: 100%;
+    margin: 0;
+  }
+  #email-container {
+    width: 70%;
+    height: 40px;
+    margin: 10px auto 0px auto;
+    position: relative;
+  }
+  input, button, #error-icon, #error {
+    height: 100%;
+    position: absolute;
+  }
+  input {
+    width: 80%;
+    top: 0;
+    left: 0;
+  }
+  button {
+    width: 30%;
+    top: 0;
+    left: 70%;
+  }
+  #error-icon {
+    height: 50%;
+    top: 25%;
+    left: 60%;
+  }
+  #error {
+    top: 50px;
+    left: 0px;
+  }
+}/*# sourceMappingURL=styles.css.map */
